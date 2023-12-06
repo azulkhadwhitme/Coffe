@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Pangolin';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+
+}
+
+@keyframes backgroundSlide {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(este.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    z-index: -1;
+    animation: backgroundSlide 30s linear infinite;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D2691E;
+    color: #FFF;
+    transition-duration: 0.5s;
+}
+
+header:hover {
+    background-color: #FFF;
+    transition: linear;
+    transition-duration: 0.5s;
+    color: #D2691E;
+}
+
+header .titulo-header {
+    margin-left: 30px;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header:hover a {
+    color: #D2691E;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.distribuidor {
+    width: 300px;
+    background-color: #8B4513;
+    border: 1px solid #D2691E;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+
+.distribuidor:hover {
+    transform: scale(1.05);
+    background-color: #A52A2A;
+}
+
+.distribuidor img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.distribuidor h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.distribuidor p {
+    color: #FFF;
+}
+
+.distribuidor a {
+    text-decoration: none;
+    color: #D2691E;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #D2691E;
+    color: #FFF;
+    border-radius: 0 0 10px 10px;
+}

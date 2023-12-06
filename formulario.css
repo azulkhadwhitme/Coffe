@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pangolin', sans-serif;
+    background: linear-gradient(to right, #543D3D, #8B4513);
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B4513; /* Brown color for a coffee theme */
+    color: #FFF;
+    transition-duration: 0.5s;
+}
+
+header:hover {
+    background-color: #FFF;
+    color: #8B4513;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header:hover a {
+    color: #8B4513;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.left-gif,
+.right-gif {
+    height: 470px;
+    max-width: 426px;
+}
+
+form {
+    max-width: 400px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.pantalla-principal {
+    background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(brocoliduro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    background-color: #8B4513;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+legend {
+    font-size: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: white;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #8B4513;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #543D3D; /* Darker brown on hover */
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Pangolin';
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8B4513; /* Brown color for a coffee theme */
+    color: #FFF;
+    transition-duration: 0.5s;
+}
+
+header:hover {
+    background-color: #FFF;
+    color: #8B4513;
+}
+
+header .titulo-header {
+    margin-left: 30px;
+}
+
+header a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header:hover a {
+    color: #8B4513;
+}
+
+.pantalla-principal {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(coffee-background.jpg); /* Change to a coffee-themed background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95vh;
+    position: relative;
+}
+
+.pantalla-principal h2 {
+    text-align: center;
+    padding-top: 200px;
+    color: #8B4513;
+}
+
+.pantalla-principal p {
+    text-align: center;
+    color: #8B4513;
+}
+
+.bubble::after {
+    content: '';
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #8B4513;
+    height: 25%;
+}
+
+.enlaces {
+    background-color: #8B4513;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.enlaces img {
+    max-width: 100%;
+}
+
+fieldset {
+    background-color: #A52A2A; /* Saddle Brown color for form elements */
+    border-radius: 10px;
+    border: none;
+    color: #FFF;
+    font-family: 'Pangolin';
+}
+
+label {
+    display: flex;
+    color: #FFF;
+}
+
+input {
+    color: #8B4513;
+    background-color: #A52A2A;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+}
